@@ -1,0 +1,104 @@
+/* 基本スタイルのリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ヒーローヘッダー */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.hero h1 {
+    font-size: 3.0em;
+}
+
+/* コンテナ */
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px; /* コンテナの最大幅を広げました */
+    padding: 0 20px; /* 横のパディングを少し減らす */
+}
+
+/* サイドバー */
+.sidebar {
+    width: 180px; /* サイドバーの幅を広く設定し、広告を確保 */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* メインコンテンツ */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* メインコンテンツの左右のマージンを少し減らす */
+}
+
+/* セクション */
+section {
+    margin-bottom: 20px;
+}
+
+/* ボタンスタイル */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* フッター */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.banner-ad {
+    margin-top: 20px;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .sidebar {
+        margin-bottom: 20px;
+        width: auto; /* モバイル時は幅を自動に */
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+}
