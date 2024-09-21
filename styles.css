@@ -124,6 +124,14 @@ p {
     transform: translateY(-3px);
 }
 
+/* 画像のサイズを調整 */
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* フッター */
 footer {
     background-color: #1a1a1a;
@@ -132,3 +140,4 @@ footer {
     margin-top: 40px;
     font-size: 0.9em;
     color: #999;
+}
