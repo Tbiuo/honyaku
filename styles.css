@@ -124,12 +124,16 @@ p {
     transform: translateY(-3px);
 }
 
-/* 画像のサイズを調整 */
-img {
-    max-width: 50%;
+/* 画像のサイズを調整し、横一列に並べる */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 画像間の幅を設定 */
+}
+
+.image-container img {
+    width: 45%; /* 画像の大きさを半分に設定 */
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 /* フッター */
